@@ -92,6 +92,27 @@ em { font-style: italic; color: var(--accent); }
   border-radius: 999px;
 }
 .nav .nav-cta:hover { border-color: var(--accent); }
+.lang-switch {
+  display: flex;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.lang-switch button {
+  padding: 4px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  cursor: pointer;
+}
+.lang-switch button:hover { color: var(--text); }
+.lang-switch button[aria-pressed='true'] {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
 
 main {
   max-width: var(--wrap);
@@ -284,6 +305,58 @@ code {
   color: var(--accent);
 }
 
+/* Trajetória */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid var(--line);
+}
+.timeline li {
+  position: relative;
+  padding: 0 0 40px 32px;
+}
+.timeline li:last-child { padding-bottom: 0; }
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.timeline li.next::before {
+  background: var(--bg);
+  border: 1px dashed var(--accent);
+}
+.timeline .when {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--accent);
+}
+.timeline h3 {
+  margin-top: 6px;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+}
+.timeline p {
+  margin-top: 4px;
+  max-width: 56ch;
+  color: var(--muted);
+}
+.timeline .where { color: var(--text); }
+
+.block h2:has(+ .section-lead) { margin-bottom: 10px; }
+.section-lead {
+  margin-bottom: 36px;
+  color: var(--muted);
+}
+.card-more { border-style: dashed; }
+
 /* Stack */
 .stack {
   display: grid;
@@ -359,15 +432,6 @@ code {
   padding-top: 20px;
   font-size: 14px;
   font-weight: 600;
-}
-.more {
-  margin-top: 28px;
-  color: var(--muted);
-  font-size: 15px;
-}
-.more a {
-  color: var(--text);
-  border-bottom: 1px solid var(--accent);
 }
 
 /* Contato */

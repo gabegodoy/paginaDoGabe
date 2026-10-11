@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gabriel Godoy — Desenvolvedor FullStack</title>
-  <meta name="description" content="Gabriel Godoy é desenvolvedor FullStack, especialista em Front-End, de Bauru-SP. Conheça a stack, os projetos e como entrar em contato." />
-  <meta property="og:title" content="Gabriel Godoy — Desenvolvedor FullStack" />
-  <meta property="og:description" content="FullStack, especialista em Front-End. Bauru-SP, Brasil." />
+  <title>Gabriel Godoy — Senior Fullstack Engineer</title>
+  <meta name="description" content="Gabriel Godoy é Senior Fullstack Engineer na Faculdade Futurus, em Bauru-SP, a caminho de Tech Lead. Conheça a trajetória, a stack e os projetos." />
+  <meta property="og:title" content="Gabriel Godoy — Senior Fullstack Engineer" />
+  <meta property="og:description" content="Senior Fullstack Engineer @ Faculdade Futurus. Bauru-SP, Brasil." />
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/98069011?v=4" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,156 +14,172 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
 
   <header class="nav">
-    <a class="brand" href="#topo" aria-label="Início">gabe<span>.</span>godoy</a>
-    <nav aria-label="Principal">
-      <a href="#sobre">Sobre</a>
-      <a href="#stack">Stack</a>
-      <a href="#projetos">Projetos</a>
-      <a class="nav-cta" href="#contato">Contato</a>
+    <a class="brand" href="#topo">gabe<span>.</span>godoy</a>
+    <nav>
+      <a href="#sobre" data-i18n="nav.about">Sobre</a>
+      <a href="#trajetoria" data-i18n="nav.career">Trajetória</a>
+      <a href="#stack" data-i18n="nav.stack">Stack</a>
+      <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="nav-cta" href="#contato" data-i18n="nav.contact">Contato</a>
     </nav>
   </header>
 
   <main id="conteudo">
     <section class="hero" id="topo">
       <div class="hero-text">
-        <p class="eyebrow"><span class="dot"></span> Disponível para novos projetos · Bauru-SP, Brasil</p>
-        <h1>Gabriel Godoy<br /><em>desmonta, entende</em><br />e monta de novo.</h1>
-        <p class="lead">
-          Desenvolvedor FullStack, especialista em Front-End. Transformo curiosidade
-          em interfaces rápidas, bem acabadas e gostosas de usar.
+        <p class="eyebrow"><span class="dot"></span> <span data-i18n="hero.eyebrow">Senior Fullstack Engineer @ Faculdade Futurus · Bauru-SP, Brasil</span></p>
+        <h1 data-i18n="hero.title">Gabriel Godoy<br /><em>desmonta, entende</em><br />e monta de novo.</h1>
+        <p class="lead" data-i18n="hero.lead">
+          Engenheiro Fullstack Sênior na Faculdade Futurus. Construo produtos de ponta a
+          ponta, da interface à API — e estou no caminho para Tech Lead.
         </p>
         <div class="actions">
-          <a class="btn primary" href="#projetos">Ver projetos</a>
+          <a class="btn primary" href="https://www.linkedin.com/in/gabrielgodoy-dev" target="_blank" rel="noopener">LinkedIn ↗</a>
           <a class="btn ghost" href="https://github.com/gabegodoy" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
       </div>
 
       <figure class="portrait">
-        <img src="https://avatars.githubusercontent.com/u/98069011?v=4" alt="Foto de Gabriel Godoy" width="320" height="320" />
+        <img src="https://avatars.githubusercontent.com/u/98069011?v=4" alt="Gabriel Godoy" width="320" height="320" />
         <figcaption>
           <span>// gabegodoy</span>
-          <span>desde 2022 no GitHub</span>
+          <span>Bauru-SP · BR</span>
         </figcaption>
       </figure>
     </section>
 
-    <ul class="stats" aria-label="Números">
-      <li><strong>50</strong><span>repositórios públicos</span></li>
-      <li><strong>2022</strong><span>primeiro commit publicado</span></li>
-      <li><strong>Front → Back</strong><span>da interface à API</span></li>
+    <ul class="stats">
+      <li><strong data-i18n="stats.1.value">Sênior</strong><span data-i18n="stats.1.label">Fullstack Engineer na Faculdade Futurus</span></li>
+      <li><strong data-i18n="stats.2.value">Front → Back</strong><span data-i18n="stats.2.label">da interface à API</span></li>
+      <li><strong data-i18n="stats.3.value">Tech Lead</strong><span data-i18n="stats.3.label">o próximo passo</span></li>
     </ul>
 
     <section class="block reveal" id="sobre">
-      <h2><span class="num">01</span> Sobre</h2>
+      <h2><span class="num">01</span> <span data-i18n="about.title">Sobre</span></h2>
       <div class="about">
-        <blockquote>
+        <blockquote data-i18n="about.quote">
           “A diferença entre o eu de hoje e o eu de criança é que agora eu consigo
           remontar as peças do que desmontei. A curiosidade continua correndo nas minhas veias.”
         </blockquote>
         <div class="about-body">
-          <p>
-            Sou o Gabriel — Gabe, para os íntimos. Desenvolvedor FullStack com o coração
-            no Front-End: gosto do detalhe que ninguém pede mas todo mundo sente, do
-            layout que encaixa e do código que outra pessoa consegue ler.
+          <p data-i18n="about.p1">
+            Sou o Gabriel — Gabe, para os íntimos. Engenheiro Fullstack Sênior com o
+            coração no Front-End: gosto do detalhe que ninguém pede mas todo mundo sente,
+            da arquitetura que aguenta crescer e do código que outra pessoa consegue ler.
           </p>
-          <p>
-            Meu primeiro código publicado respondia a uma pergunta séria:
-            <code>possoBeberHoje</code>. De lá para cá vieram jogos, landing pages para
-            negócios de amigos, um Wordle feito para minha avó e aplicações completas
-            com front e back.
+          <p data-i18n="about.p2">
+            Hoje atuo na Faculdade Futurus, cuidando de produto de ponta a ponta. Meu
+            próximo objetivo é liderar tecnicamente um time: decidir bem, destravar
+            pessoas e entregar software que dura.
           </p>
-          <ul class="life" aria-label="98% da minha vida">
-            <li>Programar</li>
-            <li>Ler</li>
-            <li>Jogar</li>
-            <li>Um gole de whisky</li>
+          <ul class="life">
+            <li data-i18n="about.life.1">Programar</li>
+            <li data-i18n="about.life.2">Ler</li>
+            <li data-i18n="about.life.3">Jogar</li>
           </ul>
-          <p class="note">= 98% da minha vida. E eu adoro.</p>
         </div>
       </div>
     </section>
 
+    <section class="block reveal" id="trajetoria">
+      <h2><span class="num">02</span> <span data-i18n="career.title">Trajetória</span></h2>
+      <ol class="timeline">
+        <li class="next">
+          <span class="when" data-i18n="career.next.when">Próximo passo</span>
+          <h3>Tech Lead</h3>
+          <p data-i18n="career.next.text">O objetivo agora: liderança técnica, com a mão no código e o olho no time.</p>
+        </li>
+        <li>
+          <span class="when" data-i18n="career.now.when">Mar 2026 — atual</span>
+          <h3>Senior Fullstack Engineer</h3>
+          <p class="where">Faculdade Futurus</p>
+        </li>
+      </ol>
+    </section>
+
     <section class="block reveal" id="stack">
-      <h2><span class="num">02</span> Stack</h2>
+      <h2><span class="num">03</span> Stack</h2>
       <div class="stack">
         <article>
           <h3>Front-End</h3>
-          <p>Onde eu passo a maior parte do tempo.</p>
+          <p data-i18n="stack.front">Onde eu passo a maior parte do tempo.</p>
           <ul class="tags">
             <li>TypeScript</li><li>JavaScript</li><li>React</li><li>Next.js</li><li>Vue</li><li>HTML</li><li>CSS</li>
           </ul>
         </article>
         <article>
           <h3>Back-End</h3>
-          <p>Para fechar o ciclo de ponta a ponta.</p>
+          <p data-i18n="stack.back">Para fechar o ciclo de ponta a ponta.</p>
           <ul class="tags">
-            <li>Java</li><li>APIs REST</li>
+            <li>Java</li><li data-i18n="stack.rest">APIs REST</li>
           </ul>
         </article>
         <article>
-          <h3>Dia a dia</h3>
-          <p>O que mantém tudo andando.</p>
+          <h3 data-i18n="stack.daily.title">Dia a dia</h3>
+          <p data-i18n="stack.daily">O que mantém tudo andando.</p>
           <ul class="tags">
-            <li>Git</li><li>GitHub</li><li>Vercel</li><li>Design responsivo</li>
+            <li>Git</li><li>GitHub</li><li data-i18n="stack.responsive">Design responsivo</li>
           </ul>
         </article>
       </div>
     </section>
 
     <section class="block reveal" id="projetos">
-      <h2><span class="num">03</span> Projetos</h2>
+      <h2><span class="num">04</span> <span data-i18n="projects.title">Projetos pessoais</span></h2>
+      <p class="section-lead" data-i18n="projects.lead">O que eu construo fora do trabalho, por curiosidade.</p>
       <div class="projects">
-        <a class="card" href="https://portfolio-next-snowy-five.vercel.app" target="_blank" rel="noopener">
-          <span class="lang">TypeScript · Next.js</span>
-          <h3>Portfolio 2.0</h3>
-          <p>A segunda versão do meu portfólio, reescrita em Next.js e publicada na Vercel.</p>
-          <span class="go">Ver online ↗</span>
-        </a>
         <a class="card" href="https://github.com/gabegodoy/loan-calculator-front" target="_blank" rel="noopener">
           <span class="lang">JavaScript + Java</span>
           <h3>Loan Calculator</h3>
-          <p>Calculadora de empréstimos FullStack: front em JavaScript conversando com um back-end em Java.</p>
-          <span class="go">Ver código ↗</span>
+          <p data-i18n="projects.loan">Calculadora de empréstimos Fullstack: front em JavaScript conversando com um back-end em Java.</p>
+          <span class="go" data-i18n="projects.code">Ver código ↗</span>
         </a>
         <a class="card" href="https://github.com/gabegodoy/kanban-vue" target="_blank" rel="noopener">
           <span class="lang">Vue</span>
           <h3>Kanban Vue</h3>
-          <p>Quadro kanban construído em Vue para organizar tarefas em colunas.</p>
-          <span class="go">Ver código ↗</span>
+          <p data-i18n="projects.kanban">Quadro kanban construído em Vue para organizar tarefas em colunas.</p>
+          <span class="go" data-i18n="projects.code">Ver código ↗</span>
         </a>
         <a class="card" href="https://github.com/gabegodoy/msn-messenger" target="_blank" rel="noopener">
           <span class="lang">JavaScript</span>
           <h3>MSN Messenger</h3>
-          <p>Uma homenagem nostálgica ao mensageiro que marcou uma geração, recriado no navegador.</p>
-          <span class="go">Ver código ↗</span>
+          <p data-i18n="projects.msn">Uma homenagem nostálgica ao mensageiro que marcou uma geração, recriado no navegador.</p>
+          <span class="go" data-i18n="projects.code">Ver código ↗</span>
         </a>
         <a class="card" href="https://github.com/gabegodoy/wordle" target="_blank" rel="noopener">
           <span class="lang">JavaScript</span>
-          <h3>Wordle da vó</h3>
-          <p>Uma versão do Wordle feita para minha avó — que não usa Twitter — poder jogar também.</p>
-          <span class="go">Ver código ↗</span>
+          <h3 data-i18n="projects.wordle.title">Wordle da vó</h3>
+          <p data-i18n="projects.wordle">Uma versão do Wordle feita para minha avó — que não usa Twitter — poder jogar também.</p>
+          <span class="go" data-i18n="projects.code">Ver código ↗</span>
         </a>
         <a class="card" href="https://github.com/gabegodoy/typing-game" target="_blank" rel="noopener">
           <span class="lang">JavaScript</span>
           <h3>Typing Game</h3>
-          <p>Jogo de digitação para desktop, feito com JavaScript puro.</p>
-          <span class="go">Ver código ↗</span>
+          <p data-i18n="projects.typing">Jogo de digitação para desktop, feito com JavaScript puro.</p>
+          <span class="go" data-i18n="projects.code">Ver código ↗</span>
+        </a>
+        <a class="card card-more" href="https://github.com/gabegodoy?tab=repositories" target="_blank" rel="noopener">
+          <span class="lang">GitHub</span>
+          <h3 data-i18n="projects.more.title">E muito mais</h3>
+          <p data-i18n="projects.more">50 repositórios públicos desde 2022: jogos, landing pages e experimentos.</p>
+          <span class="go" data-i18n="projects.more.go">Ver todos ↗</span>
         </a>
       </div>
-      <p class="more">
-        Tem muito mais no <a href="https://github.com/gabegodoy?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a>
-      </p>
     </section>
 
     <section class="contact reveal" id="contato">
-      <p class="eyebrow">04 · Contato</p>
-      <h2>Tem uma ideia para<br /><em>tirar do papel?</em></h2>
-      <p>Bora conversar. Respondo mais rápido pelo LinkedIn.</p>
+      <p class="eyebrow">05 · <span data-i18n="contact.eyebrow">Contato</span></p>
+      <h2 data-i18n="contact.title">Vamos construir<br /><em>algo juntos?</em></h2>
+      <p data-i18n="contact.text">Aberto a conversas sobre liderança técnica e bons produtos. Respondo mais rápido pelo LinkedIn.</p>
       <div class="actions">
-        <a class="btn primary" href="https://www.linkedin.com/in/gabecgodoy/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn primary" href="https://www.linkedin.com/in/gabrielgodoy-dev" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a class="btn ghost" href="https://github.com/gabegodoy" target="_blank" rel="noopener">GitHub ↗</a>
         <a class="btn ghost" href="https://x.com/gabcgodoy" target="_blank" rel="noopener">X / Twitter ↗</a>
       </div>
@@ -172,9 +188,10 @@
 
   <footer>
     <span>© <span id="ano">2026</span> Gabriel Godoy</span>
-    <span>Feito com curiosidade em Bauru-SP</span>
+    <span data-i18n="footer">Feito com curiosidade em Bauru-SP</span>
   </footer>
 
+  <script src="i18n.js"></script>
   <script>
     document.getElementById('ano').textContent = new Date().getFullYear();
 
